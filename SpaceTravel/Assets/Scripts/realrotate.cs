@@ -10,7 +10,7 @@ public class realrotate : MonoBehaviour
 
     public Vector3 force;
 
-    private Vector3 distance;
+    public Vector3 distance;
 
     public float GMm = 5000;
     //data for rotation
