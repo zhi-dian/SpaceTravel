@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class loadgame : MonoBehaviour
 {
-    public int levelNum = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +17,8 @@ public class loadgame : MonoBehaviour
         
     }
 
-    public void LoadingGame()
+    public void LoadingGame(string levelname)
     {
-        SceneManager.LoadScene(levelNum);
+        SceneManager.LoadScene(levelname);
     }
 }

@@ -7,6 +7,7 @@ public class minimapdirection : MonoBehaviour
     // Start is called before the first frame update
     public realrotate ship;
     public Transform follow;
+    public float y = 500f;
     void Start()
     {
         
@@ -16,7 +17,7 @@ public class minimapdirection : MonoBehaviour
     void Update()
     {
         transform.rotation = Quaternion.FromToRotation(Vector3.up,ship.velocity);
-        transform.position = new Vector3(follow.position.x,10f,follow.position.z);
+        transform.position = new Vector3(follow.position.x,y,follow.position.z);
         //Debug.Log(ship.velocity);
     }
 }

@@ -24,43 +24,13 @@ public class realrotate : MonoBehaviour
 
     public GameObject target = null;
     
-    /*    
-    [Header("Cinemachine")]
-    [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
-    public GameObject CinemachineCameraTarget;
 
-    [Tooltip("How far in degrees can you move the camera up")]
-    public float TopClamp = 70.0f;
-
-    [Tooltip("How far in degrees can you move the camera down")]
-    public float BottomClamp = -30.0f;
-
-    [Tooltip("Additional degress to override the camera. Useful for fine tuning camera position when locked")]
-    public float CameraAngleOverride = 0.0f;
-
-    [Tooltip("For locking the camera position on all axis")]
-    public bool LockCameraPosition = false;
-
-    private StarterAssetsInputs _input;
-    private GameObject _mainCamera;
-
-    private const float _threshold = 0.01f;
-    private float _cinemachineTargetYaw;
-    private float _cinemachineTargetPitch;
-    // Start is called before the first frame update
-    
-    */
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 //        velocity =new Vector3(0, 0, 8);
         rb.velocity = velocity;
-     /*   
-        if (_mainCamera == null)
-        {
-            _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        }
-        */
+     
     }
 
     // Update is called once per frame
@@ -94,16 +64,19 @@ public class realrotate : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             Debug.Log("S pressed");
-            rb.velocity -= rb.velocity.normalized * control;
+            if(rb.velocity.magnitude > 0.5) rb.velocity -= rb.velocity.normalized * control;
         }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("trigger!!");
-        target = collision.transform.parent.gameObject;
-        center = target.transform.position;
-        GMm = target.GetComponent<starproperty>().GMm;
+        if (collision.CompareTag("Field"))
+        {
+            Debug.Log("trigger!!");
+            target = collision.transform.parent.gameObject;
+            center = target.transform.position;
+            GMm = target.GetComponent<starproperty>().GMm;
+        }
     }
 
     private void OnTriggerExit(Collider other)
