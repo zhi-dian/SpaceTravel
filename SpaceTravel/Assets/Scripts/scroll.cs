@@ -9,15 +9,24 @@ public class scroll : MonoBehaviour
 
     // Update is called once per frame
     public Camera map;
+    public GameObject pointer;
+    public GameObject winpointer;
     void Update()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
-        {
-            map.orthographicSize *= 2;
-        }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
+            if (map.orthographicSize < 1000)
+            {
+                map.orthographicSize *= 2;
+                pointer.transform.localScale *= 2;
+                winpointer.transform.localScale *= 2;
+            }
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
             map.orthographicSize /= 2;
+            pointer.transform.localScale /= 2;
+            winpointer.transform.localScale /= 2;
         }
     }
 }

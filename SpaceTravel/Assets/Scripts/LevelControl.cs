@@ -22,6 +22,7 @@ public class LevelControl : MonoBehaviour
 
     public void Nextlevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(nextlevel);
     }
 
