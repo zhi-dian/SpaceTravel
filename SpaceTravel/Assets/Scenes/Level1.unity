@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6156779715816936413, guid: a79a15766f9fbe8468fddd4ab4269826, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6156779715816936415, guid: a79a15766f9fbe8468fddd4ab4269826, type: 3}
       propertyPath: pointer
       value: 
@@ -934,6 +938,10 @@ PrefabInstance:
     - target: {fileID: 5009221677345562576, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
       propertyPath: m_Name
       value: Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009221677345562576, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5009221677345562580, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
       propertyPath: m_RootOrder
@@ -1415,6 +1423,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2145922762601408433, guid: a19ee009c25d8824ca9556a7b96f13d8, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2145922762601408435, guid: a19ee009c25d8824ca9556a7b96f13d8, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1610,7 +1622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1119394186
 Transform:
   m_ObjectHideFlags: 0
@@ -2097,19 +2109,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9402644
+      value: 0.94026446
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3404227
+      value: 0.34042263
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0036699625
+      value: -0.0036700002
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0013287095
+      value: 0.0013287232
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400747469296, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_Follow
@@ -2441,6 +2453,10 @@ PrefabInstance:
     - target: {fileID: 8345196557106418054, guid: 1907a83340144ad4585d82826824a61d, type: 3}
       propertyPath: m_Name
       value: pointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345196557106418054, guid: 1907a83340144ad4585d82826824a61d, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1907a83340144ad4585d82826824a61d, type: 3}
@@ -2783,7 +2799,7 @@ GameObject:
   - component: {fileID: 7635189087272012079}
   - component: {fileID: 7635189087272012048}
   - component: {fileID: 7635189087272012077}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: winpointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
