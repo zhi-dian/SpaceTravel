@@ -20,6 +20,7 @@ public class DataOverlay : MonoBehaviour
     {
         newspeed = 0;
         distance = 0;
+        ship = GameObject.Find("Cube").gameObject;
     }
 
     // Update is called once per frame

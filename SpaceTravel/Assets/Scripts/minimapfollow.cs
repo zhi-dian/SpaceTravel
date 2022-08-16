@@ -9,6 +9,10 @@ public class minimapfollow : MonoBehaviour
     
 
     // Update is called once per frame
+    void Start()
+    {
+        follow = GameObject.Find("Cube").transform;
+    }
     void Update()
     {
         transform.position = new Vector3(follow.position.x,200f,follow.position.z);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,13 @@ public class faildetect : MonoBehaviour
     public GameObject failpattern;
     public GameObject pause;
     // Start is called before the first frame update
-    
+    private void Start()
+    {
+        failpattern = GameObject.Find("Canvas").transform.Find("Fail").gameObject;
+        pause = GameObject.Find("Canvas").transform.Find("PauseButton").gameObject;
+        
+    }
+
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)

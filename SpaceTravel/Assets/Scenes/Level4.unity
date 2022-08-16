@@ -1075,6 +1075,10 @@ PrefabInstance:
       objectReference: {fileID: 32524093}
     - target: {fileID: 5009221676340117859, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009221676340117886, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5009221677345562576, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
@@ -2231,15 +2235,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2704097399884974969, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17156346
+      value: 0.17156345
       objectReference: {fileID: 0}
     - target: {fileID: 2704097399884974969, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6689476
+      value: -0.6689475
       objectReference: {fileID: 0}
     - target: {fileID: 2704097399884974969, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.16286801
+      value: 0.162868
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2251,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6819291
+      value: 0.68192923
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2263,7 +2267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400370521212, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.23437896
+      value: 0.23437893
       objectReference: {fileID: 0}
     - target: {fileID: 2704097400747469296, guid: 883dbad85ca20a1419e4276c1928873c, type: 3}
       propertyPath: m_Follow
@@ -2754,6 +2758,18 @@ PrefabInstance:
     - target: {fileID: 2738930511009210416, guid: 8e3a6327420a6da4db791aab560c0cc6, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738930511009210423, guid: 8e3a6327420a6da4db791aab560c0cc6, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 431677055}
+    - target: {fileID: 2738930511009210442, guid: 8e3a6327420a6da4db791aab560c0cc6, type: 3}
+      propertyPath: retry
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738930511009210442, guid: 8e3a6327420a6da4db791aab560c0cc6, type: 3}
+      propertyPath: nextlevel
+      value: Level5
       objectReference: {fileID: 0}
     - target: {fileID: 2738930511009210443, guid: 8e3a6327420a6da4db791aab560c0cc6, type: 3}
       propertyPath: m_Pivot.x
