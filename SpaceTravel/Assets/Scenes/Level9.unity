@@ -2064,7 +2064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009221677345562578, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5009221677345562580, guid: 9dd244166a83e1b4588f8c25ff532997, type: 3}
       propertyPath: m_RootOrder
@@ -2163,6 +2163,10 @@ PrefabInstance:
     - target: {fileID: 3281991147706665981, guid: 0d3c2c269c8e80041be7e6d5a99163d5, type: 3}
       propertyPath: m_Name
       value: planetGear
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281991147706665981, guid: 0d3c2c269c8e80041be7e6d5a99163d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3c2c269c8e80041be7e6d5a99163d5, type: 3}
