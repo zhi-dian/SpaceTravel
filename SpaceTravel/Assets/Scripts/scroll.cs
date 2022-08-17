@@ -33,9 +33,13 @@ public class scroll : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            map.orthographicSize /= 2;
-            pointer.transform.localScale /= 2;
-            winpointer.transform.localScale /= 2;
+
+            if (map.orthographicSize > 5)
+            {
+                map.orthographicSize /= 2;
+                pointer.transform.localScale /= 2;
+                winpointer.transform.localScale /= 2;
+            }
         }
     }
 }
