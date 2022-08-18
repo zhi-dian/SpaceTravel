@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7635189086806944641}
   - component: {fileID: 7635189086806944702}
   - component: {fileID: 7635189086806944643}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: winpointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

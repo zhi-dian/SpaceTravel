@@ -9,7 +9,11 @@ public class windetect : MonoBehaviour
     public GameObject winpattern;
     public GameObject pause;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        winpattern = GameObject.Find("Canvas").transform.Find("Succeed").gameObject;
+        pause = GameObject.Find("Canvas").transform.Find("PauseButton").gameObject;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ship"))

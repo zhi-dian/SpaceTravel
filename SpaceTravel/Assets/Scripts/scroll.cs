@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,14 @@ public class scroll : MonoBehaviour
     public Camera map;
     public GameObject pointer;
     public GameObject winpointer;
+
+    private void Start()
+    {
+        pointer = GameObject.Find("pointer").gameObject;
+        winpointer = GameObject.Find("winpointer").gameObject;
+
+    }
+
     void Update()
     {
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
@@ -24,9 +33,13 @@ public class scroll : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            map.orthographicSize /= 2;
-            pointer.transform.localScale /= 2;
-            winpointer.transform.localScale /= 2;
+
+            if (map.orthographicSize > 5)
+            {
+                map.orthographicSize /= 2;
+                pointer.transform.localScale /= 2;
+                winpointer.transform.localScale /= 2;
+            }
         }
     }
 }
